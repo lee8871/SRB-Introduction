@@ -18,7 +18,7 @@ SRB分为以下四层
   3. 事件-命令通信（cmd）
   4. 重发命令（rpt）
 1. 应用层（APL）：应用层进行周期性的任务，在任务完成后对缓冲区进行读写操作。
-
+![](http://on-img.com/chart_image/5bc9c407e4b06fc64b24cf6f.png)
 
 
 
@@ -27,4 +27,3 @@ SRB分为以下四层
 1bit起始位，1bit停止位，无奇偶校验，9bit数据位。bit8=1表示bit0-7位为地址，bit8=0表示bit0-7位为数据。
 ## 数据链路层
 本协议采用Modbus协议。主机发送一个数据包到节点，然后节点立即返回一个数据包，以完成一次访问。
-<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:525px; height:245px;" src="https://www.processon.com/embed/5bc9c407e4b06fc64b24cf6b"></iframe>
