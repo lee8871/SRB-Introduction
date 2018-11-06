@@ -6,11 +6,33 @@
 ## SRB通信
 SRB是主从式的总线网络。SRB主机决定了什么时候进行总线访问。访问指的是主机向某个节点发送命令（例如电机预期的转速），然后节点发给主机传感器采集到的数据。</br>
 通常情况下，主机访问所有节点，得到各个传感器的数据，然后运算出下一周期发给节点的命令，再进行下一次访问，如此循环。
+
 ## SRB主机
-很多设备都可以成为SRB主机。使用微控制器的UART接口连接**UART转SRB模块**，就可以作为SRB主机。我们推荐使用Arduino Leonardo作为SRB主机，[并提供Arduino驱动库](https://github.com/lee8871/SRB-master-arduino)
-此外,使用**USB转SRB模块**（使用libusb驱动），可以让任何USB设备成为SRB主机。包括：
+很多设备都可以成为SRB主机。使用微控制器的UART接口连接**UART转SRB模块**，就可以作为SRB主机。
+* 各种MCU 使用**UART转SRB模块**。
+* Arduino Leonardo作为SRB主机，[并提供Arduino驱动库](https://github.com/lee8871/SRB-master-arduino)
+
+此外，使用**USB转SRB模块**（使用libusb驱动），可以让任何USB设备成为SRB主机。包括：
 * 电脑win10系统 [并提供dotNet-SRB-master-Frame](https://github.com/lee8871/SRB-Frame-dotNet)
 * linux系统 C++库和Python库正在开发
 * ROS(ROS是Linux下的软件) C++库和Python库正在开发
-* 树莓派 库正在开发
-* 友善之臂 库正在开发
+* 树莓派 C++库和Python库正在开发
+* 友善之臂 C++库和Python库正在开发
+### SRB节点
+**SRB总线接入设备**
+1.  SRB转ARDUINO</br>
+1.  SRB转USB（就像SRB连接Ardouino一样，SRB转USB提供电脑或者树莓派等设备对SRB的直接控制。区别于现有设备，USB可以提供更极限快速的访问速度，也是SRB进入ROS系统的门户。）
+
+**目前已有的节点：**
+1.  SRB双电机控制器
+
+**即将完成的节点：**
+1.  SRB姿态传感器（用于识别机器人自身位置）</br>
+1.  SRB带有测速的电机驱动（可以获得精确的速度控制，作为里程计可以推测机器人的运行轨迹和当前位置）</br>
+1.  SRB电池管理器（可以监测电池的电量，可以完成充电）</br>
+
+**预计有这些节点：**
+1.  SRB红外传感器（用于寻迹黑线，机械臂碰撞检测）</br>
+1.  SRB带有力传感器的电机驱动（测量机械手的握力大小）</br>
+1.  SRB超声测距节点</br>
+2.  电阻/电压传感器节点</br>
