@@ -15,7 +15,7 @@ SRB是一条总线，总线上有一个主机和多个节点，每个节点带�
 SRB总线上有多个节点，这些节点的地址互不相同。用于区分节点。
 #### 让我们看看实物的情况
 下图中的轮式机器人使用了SRB，右侧是这个机器人拆下顶板的照片</br>
-<img src="http://assets.processon.com/chart_image/5ca20399e4b071e8c5412f5a.png?_=1554122135171" alt= "SRB总线实际接线" /></br>
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:1200px; height:800px;" src="https://www.processon.com/embed/5ca20399e4b071e8c5412f57"></iframe></br>
 - 照片中灰色排线与红色IDC端子对应概念图中的总线；
 - 蓝色电路板连接到Arduino，共同构成了概念图中的主机；
 - 图中的三个绿色电路板为概念图中的节点，这三个分别是PS2手柄节点、锂电池充电节点、双电机开环控制节点；
@@ -25,7 +25,7 @@ SRB总线上有多个节点，这些节点的地址互不相同。用于区分�
 ## 3. 通信模型
 在节点上有一个保存控制数据的结构体, 称为收发结构体，对于控制器，节点会根据收发结构体中的数据进行控制，对于传感器，节点会将采集到的数据传入收发结构体。
 
-<img src="http://assets.processon.com/chart_image/5ca20648e4b034408de9324c.png?_=1554123686105" alt= "" /></br>
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:1200px; height:400px;" src="https://www.processon.com/embed/5ca20648e4b034408de93248"></iframe></br>
 主机可以建立每一个节点收发结构体的副本，主机可以通过访问将自己的数据发往节点，同时读取节点的收发结构体。
 #### 让我们看看实际的程序
 在接好SRB后，只需要对Arduino进行以下初始化编程：
