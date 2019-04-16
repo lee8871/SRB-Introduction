@@ -18,12 +18,4 @@ SRB主机可以随时读取电池的电压、充电时长或者剩余电量的�
   - 充电截止电流 0.1A(如果系统持续开机，且边充边放，则永远不能充满)
   - 关机可正常充电。
 
-<div id="blink">注意：在装入电池前必须将两节电池**分别**充满电。</div>
-    <script language="javascript">
-        function changeColor(){
-            var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray";
-            color=color.split("|");
-            document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)];
-        }
-        setInterval("changeColor()",200);
-    </script>
+<font color=#e00000 >注意：在装入电池前必须将两节电池**分别**充满电。</font>
