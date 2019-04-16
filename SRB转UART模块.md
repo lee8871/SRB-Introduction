@@ -1,7 +1,7 @@
-# SRBtoUart主机
+# SRBtoUart
 ## 介绍
-** SRBtoUart主机**可以连接Arduino或者其他开发板，让这些硬件接入SRB总线。</br>
- SRBtoUart主机需要占用1个Uart接口和1个或者两个GPIO。可以给外部的电路板提供5V供电。</br>
+** SRBtoUart** 可以连接Arduino或者其他开发板，让这些硬件接入SRB总线。</br>
+ SRBtoUart需要连接开发板的Uart接口和1到2个GPIO。可以给外部的电路板提供5V供电。</br>
 
 ## 参数
 - 逻辑供电，从SRB总线接入的电压
