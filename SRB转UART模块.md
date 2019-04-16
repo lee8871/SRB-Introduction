@@ -1,7 +1,7 @@
-# SRB转UART模块V1.4
+# SRBtoUart主机
 ## 介绍
-SRB转UART模块可以连接Arduino或者其他开发板，让这些开发板接入SRB总线。</br>
-本模块可以通过SRB给外部的电路板提供5V-80mA输出。</br>
+** SRBtoUart主机**可以连接Arduino或者其他开发板，让这些硬件接入SRB总线。</br>
+ SRBtoUart主机需要占用1个Uart接口和1个或者两个GPIO。可以给外部的电路板提供5V供电。</br>
 
 ## 参数
 - 逻辑供电，从SRB总线接入的电压

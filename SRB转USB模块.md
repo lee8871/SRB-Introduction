@@ -1,7 +1,8 @@
-# SRB转USB模块V1.4
+# SRB USB主机
 ## 介绍
-SRB转USB模块允许台式电脑，树莓派，友善之臂等嵌入式设备连入SRB。</br>
-此模块使用libUSB驱动。Windows系统推荐使用[zadig](http://zadig.akeo.ie/)安装驱动。</br>
+**SRB USB主机**可以通过USB连接台式电脑、树莓派、友善之臂和其他嵌入式设备，使这些设备可以作为SRB主机连接各种节点。</br>
+SRB USB主机使用libUSB驱动，在嵌入式系统中有非常良好的支持。
+Windows系统推荐使用[zadig](http://zadig.akeo.ie/)安装驱动。</br>
 
 ## 参数
 - 逻辑供电，从SRB总线接入的电压
